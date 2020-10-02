@@ -1,0 +1,88 @@
+/** On screens less than 940px wide, shrink banner text and banner down**/
+@media screen and (max-width: 919px){
+    .banner-text {
+    font-size: 2em;
+    color: var(--bodytextcolor);
+    font-weight: 500;
+    text-align: center;
+    }
+}
+
+
+/** On screens less than 700px wide, make sidebar into a topbar **/
+@media screen and (max-width: 700px) {
+    .navbar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 100px;
+        min-height: 80px;
+        z-index: 100;
+    }
+
+    .navbar ul {
+        position: relative;
+        width: 100%;
+        padding: auto auto;
+    }
+
+    .navbar ul li {
+        width: 100%;
+        height: auto;
+    }
+
+    .navbar ul li a {
+        float: left;
+        padding: auto auto;
+        color: var(--navlinktextcolor);
+        font-size: 0.7em;
+        width: auto;
+        text-decoration: none;
+        text-align: center;
+        overflow: auto;
+    }
+
+    .banner{
+        position: relative;
+        padding-top: 150px;
+        margin-left: 0;
+        width: 100%;
+    }
+    
+    .content {
+        position: relative;
+        margin-top: auto;
+        margin-left: 0;
+    }
+}
+
+/* On screens <460px, display the bar vertically, instead of horizontally. Shrink banner a bit */
+@media screen and (max-width: 459px) 
+{
+
+    .content{
+        padding-left: 8px;
+    }
+    .banner{
+        position: relative;
+        min-width: 320px;
+        width: 100%;
+        padding-top: 150px;
+        border-bottom: 4px dotted white;
+    }
+
+    .banner-image{
+        padding-left: 0px;
+    }
+    .banner-text{
+        font-size: 1.3em;
+        text-align: center;
+        padding: auto;
+    }
+       
+    .banner span{
+        border: 5px dashed var(--hoverlinkcolor);
+        border-radius: 60px;
+        margin: auto auto;
+    }
+}
